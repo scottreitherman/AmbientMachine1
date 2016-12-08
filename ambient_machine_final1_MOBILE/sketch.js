@@ -1,4 +1,4 @@
-// We are in the master
+// We are in the Branch
 var recorder, soundOut, soundFile;
 var img;
 var state = 0; // mousePress will increment from Record, to Stop, to
