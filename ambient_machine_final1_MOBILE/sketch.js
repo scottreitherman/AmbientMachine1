@@ -1,3 +1,4 @@
+// We are in the master
 var recorder, soundOut, soundFile;
 var img;
 var state = 0; // mousePress will increment from Record, to Stop, to
@@ -33,12 +34,12 @@ function preload() {
     var arp = loadSound('arp_delaypad_G' + i + '.mp3');
     arps.push(arp);
   }
-  
+
 for (var i = 0; i < 4; i++) {
     var harp = loadSound('backwardsHarp' + i + '.mp3');
     harps.push(harp);
   }
-  
+
 for (var i = 0; i < 5; i++) {
     var jungle = loadSound('jungle' + i + '.mp3');
     jungles.push(jungle);
@@ -69,9 +70,9 @@ function draw() {
   for (var i = 0; i < balls.length; i++) {
     balls[i].btnDisplay();
     balls[i].applyForce(gravity);
-    // balls[i].applyForce(wind 
+    // balls[i].applyForce(wind
 
-    // IF statement about the true/false button pressed for un/freeze ball motion 
+    // IF statement about the true/false button pressed for un/freeze ball motion
     if (balls[i].move) {
       balls[i].update();
       balls[i].displayRect();
